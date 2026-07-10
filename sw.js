@@ -1,5 +1,5 @@
-const CACHE = 'ph-arctic-v1';
-const ASSETS = ['./', './index.html', './apple-touch-icon.png', './manifest.webmanifest'];
+const CACHE = 'ph-arctic-v2';
+const ASSETS = ['./', './index.html', './apple-touch-icon.png', './manifest.json'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
